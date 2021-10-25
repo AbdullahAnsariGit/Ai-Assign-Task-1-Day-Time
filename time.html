@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day and Time - Assignment - Task 1</title>
+</head>
+<body>
+    <div class="timediv">
+    <h1>Task #1</h1>
+    <strong id="today"></strong>
+    <strong id="time"></strong>
+    </div>
+    <script>
+        setInterval(() => {
+            
+        
+       var date= new Date();
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        document.getElementById("today").innerHTML = "Today is : " + days[date.getDay()];
+        document.getElementById("time").innerHTML = "and Current Time is : " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    }, 1000);
+    </script>
+</body>
+</html>
